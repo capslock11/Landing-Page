@@ -184,8 +184,6 @@ ul {
     gap: 1rem;
     margin: 0 10%;
 
-
-
 }
 
 .contents {
@@ -217,6 +215,7 @@ h1 {
 .description {
     font-size: 1.5rem;
     margin: 1rem 8rem 3rem 0;
+    line-height: 2.2rem;
 }
 
 .button {
@@ -376,35 +375,157 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: #262626;
-    }
 
     .contents {
         flex-direction: column;
-        width: 320px;
-        height: 600px;
+        justify-content: center;
+        align-items: center;
         margin: 0;
-        padding: 0;
+        padding: 1rem;
+        height: 400px;
     }
 
     .section {
         margin: 0;
-        padding: 0]
+        padding: 0;
+
     }
 
     .section img {
         max-width: 300px;
+        padding: 0;
 
     }
 
-    .footer {
-        display: block;
+    .first-section {
+        margin: 0;
+        padding-bottom: 0;
+
+    }
+
+    .left-section {
+        padding: 0;
+        font-size: 1rem;
+
+    }
+
+    .right-section {
+        padding: 0;
+
+    }
+
+    .more-info {
+        margin: 1rem 1rem 0 1rem;
+        padding: 0;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .button {
+        width: 100px;
+        height: 50px;
+        font-size: 1rem;
+        margin: 1rem auto;
+
+    }
+
+
+
+    .camper {
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .grid-group {
+        grid-template-rows: 500px 300px 300px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        margin: 1rem;
     }
 
     .places {
-        flex-direction: column;
-        display: block;
-        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        display: flex;
+        min-width: 300px;
+
+    }
+
+    .more {
+        width: 120px;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .more img {
+        width: 120px;
+        height: 100px;
+        border-radius: 9px;
+
+
+    }
+
+    .main-nav {
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        margin: 0 auto;
+
+        margin: 0 auto;
+        padding: 0;
+        font-size: 1rem;
+
+    }
+
+    ul {
+        flex: 0;
+    }
+
+    .qoutes {
+        font-size: 1rem;
+        margin: 0;
+        padding: .5rem 1rem;
+        text-align: center;
+    }
+
+    .cta {
+        align-items: center;
+        font-size: 1rem;
+        grid-template-columns: 250px 100px;
+        border-radius: 0;
+    }
+
+    .lastword {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .lastword h3 {
+        font-size: 1rem;
     }
 }
